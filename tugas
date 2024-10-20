@@ -1,0 +1,17 @@
+#Program menghitung umur seseorang
+import datetime as dt 
+
+tanggal = int(input("Tanggal : "))
+bulan = int(input("Bulan : "))
+tahun = int(input("Tahun : "))
+tanggalLahir = dt.date(tahun, bulan, tanggal)
+print(f"maka tanggal lahirmu adalah : {tanggalLahir}")
+
+hari_ini = dt.date.today()
+umur = hari_ini - tanggalLahir
+umur_hari = umur.days
+umur_tahun = umur_hari // 365
+sisa_hari = umur_hari % 365
+umur_bulan = sisa_hari // 30
+umur_hari = sisa_hari % 30
+print(f"Umur kamu adalah : {umur_tahun} tahun, {umur_bulan} bulan, {umur_hari}hari")
