@@ -1,0 +1,27 @@
+# Rias Prihatanto
+# NIM = 2409076005
+
+# Program kalkulator sederhana 
+
+print ("Pilih operasi yang akan kamu gunakan : ")
+print ("Penjumlahan = 1")
+print ("Pengurangan = 2")
+print ("Perkalian = 3")
+print ("Pembagian = 4")
+operasi = float(input("Masukkan tipe operasi : "))
+angka1 = float(input("Angka 1 :"))
+angka2 = float(input("Angka 2 :"))
+if operasi == 1:
+    hasil = angka1 + angka2
+    print("Hasil penjumlahan : ", hasil)
+elif operasi == 2:
+    hasil = angka1 - angka2
+    print("Hasil peengurangan : ", hasil)
+elif operasi == 3:
+    hasil = angka1 * angka2
+    print("Hasil perkalian :", hasil)
+elif operasi == 4:
+    hasil = angka1 / angka2
+    print("Hasil pembagian : ", hasil)
+else :
+    print("Kamu salah memasukkan tanda operasi atau tipe angka")
